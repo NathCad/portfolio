@@ -1,0 +1,43 @@
+@import "../styles/variables.scss";
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  gap: $gap;
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 1.5rem;
+    }
+    @media (max-width: $mobile-breakpoint) {
+      display: none;
+    }
+  }
+  .burger-menu {
+    display: none;
+    @media (max-width: $mobile-breakpoint) {
+      display: block;
+    }
+  }
+  .cv-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 10px;
+    padding: $padding-link-button;
+    width: 9.5rem;
+    height: 3.5rem;
+    @media (max-width: $mobile-breakpoint) {
+      display: none;
+    }
+  }
+}

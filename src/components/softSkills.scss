@@ -1,0 +1,41 @@
+@import "../styles/variables.scss";
+
+.soft-skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  h2 {
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    .skill-item {
+      width: 45%;
+      .skill {
+        height: 8rem;
+        $skill-gap: 1rem;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $skill-gap;
+        border: solid $color-primary-black 2px;
+        border-radius: 4px;
+        svg {
+          width: auto;
+          height:80%;
+        }
+        @media (max-width: $medium-screen-breakpoint) {
+          grid-template-columns: repeat(5, 1fr);
+        }
+        @media (max-width: $mobile-breakpoint) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
