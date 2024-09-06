@@ -5,13 +5,15 @@ import DevSkills from "./components/DevSkills";
 import SoftSkills from "./components/SoftSkills"
 
 import "./app.scss";
+import AboutMe from "./components/AboutMe";
 
 
 export const App = () => (
   <>
-    <Header></Header>
-    <Intro></Intro>
-    <DevSkills></DevSkills>
-    <SoftSkills></SoftSkills>
+    <Header />
+    <Intro />
+    <DevSkills />
+    <SoftSkills />
+    <AboutMe />
   </>
 );

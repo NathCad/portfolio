@@ -1,6 +1,7 @@
 @import "../styles/variables.scss";
 
 .dev-skills {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -29,12 +30,6 @@
         svg {
           width: 2rem;
           height: 2rem;
-        }
-        @media (max-width: $medium-screen-breakpoint) {
-          grid-template-columns: repeat(5, 1fr);
-        }
-        @media (max-width: $mobile-breakpoint) {
-          grid-template-columns: repeat(2, 1fr);
         }
       }
     }

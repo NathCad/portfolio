@@ -1,10 +1,13 @@
 @import "../styles/variables.scss";
 
 .soft-skills {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
+  background-color: $color-primary-black;
+  color: $color-primary-white;
   h2 {
     text-align: center;
   }
@@ -15,6 +18,9 @@
     gap: 1rem;
     .skill-item {
       width: 45%;
+      @media (max-width: $mobile-breakpoint) {
+        width: 90%;
+      }
       .skill {
         height: 8rem;
         $skill-gap: 1rem;
@@ -23,17 +29,12 @@
         justify-content: center;
         align-items: center;
         gap: $skill-gap;
-        border: solid $color-primary-black 2px;
+        border: solid $color-primary-white 2px;
         border-radius: 4px;
         svg {
+          fill: $color-primary-white;
           width: auto;
-          height:80%;
-        }
-        @media (max-width: $medium-screen-breakpoint) {
-          grid-template-columns: repeat(5, 1fr);
-        }
-        @media (max-width: $mobile-breakpoint) {
-          grid-template-columns: repeat(2, 1fr);
+          height: 80%;
         }
       }
     }

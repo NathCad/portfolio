@@ -28,15 +28,17 @@ const skills = [
 
 const DevSkills = () => {
   return (
-    <SkillSet
-      className={"dev-skills"}
-      title={
-        <h2 className="display-text extrabold">
-          <span className="regular">Dev</span>&nbsp;Skills
-        </h2>
-      }
-      skills={skills}
-    />
+    <div id="dev-skills">
+      <SkillSet
+        className={"dev-skills"}
+        title={
+          <h2 className="display-text extrabold">
+            <span className="regular">Dev</span>&nbsp;Skills
+          </h2>
+        }
+        skills={skills}
+      />
+    </div>
   );
 };
 export default DevSkills;

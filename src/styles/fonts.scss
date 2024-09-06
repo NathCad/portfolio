@@ -16,9 +16,9 @@
 .display-text {
   font-size: 3rem;
   line-height: 3.5rem;
-  color: $color-primary-black;
+  color: inherit;
   &-m {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
@@ -36,38 +36,38 @@
   }
 }
 .sub-heading {
-  color: $color-primary-black;
+  color: inherit;
   font-size: 2.5rem;
   line-height: 5.5rem;
 }
 .heading {
   &-h1 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
   &-h2 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 2rem;
     line-height: 2.75rem;
   }
   &-h3 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 1.75rem;
     line-height: 2rem;
   }
   &-h4 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
   &-h5 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
   &-h6 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -75,17 +75,17 @@
 
 .paragraph {
   &-p1 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
   &-p2 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 1rem;
     line-height: 1.25rem;
   }
   &-p2 {
-    color: $color-primary-black;
+    color: inherit;
     font-size: 0.75rem;
     line-height: 1rem;
   }
@@ -93,15 +93,15 @@
 .button-text {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: $color-primary-white;
+  color: inherit;
   &-2 {
-    color: $color-primary-white;
+    color: inherit;
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 .underlined {
-  color: $color-primary-black;
+  color: inherit;
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-decoration: underline;
