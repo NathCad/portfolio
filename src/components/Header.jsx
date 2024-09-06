@@ -23,7 +23,7 @@ const Header = () => {
           <NavLink text="About Me" link="#about-me" />
           <NavLink text="Dev Skills" link="#dev-skills" />
           <NavLink text="Soft Skills" link="#soft-skills" />
-          <NavLink text="Projets" link="#projets" />
+          <NavLink text="Projets" link="#projects" />
           <NavLink text="Contact" link="#contact" />
         </ul>
       </nav>

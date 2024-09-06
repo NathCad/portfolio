@@ -1,0 +1,63 @@
+@import "../styles/variables.scss";
+
+#projects {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: $color-primary-black;
+  color: $color-primary-white;
+  h2 {
+    text-align: center;
+  }
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 4rem;
+    li {
+      &:nth-child(even) {
+        .project {
+          flex-direction: row-reverse;
+          @media (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+        }
+        }
+      }
+      .project {
+        display: flex;
+        gap: 2rem;
+        @media (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+        }
+        .image {
+          width: 40%;
+          border-radius: 1.1rem;
+          @media (max-width: $mobile-breakpoint) {
+            width: 100%;
+          }
+        }
+        .project-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1.5rem;
+          padding: 1rem;
+          .title {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+          .desciption {
+            color: $color-zinc-300;
+          }
+          .link {
+            color: $color-primary-white;
+          }
+        }
+      }
+    }
+  }
+}

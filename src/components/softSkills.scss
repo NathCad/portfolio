@@ -31,10 +31,23 @@
         gap: $skill-gap;
         border: solid $color-primary-white 2px;
         border-radius: 4px;
-        svg {
-          fill: $color-primary-white;
-          width: auto;
-          height: 80%;
+        .icon {
+          width: 40%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 40%;
+            height: auto;
+            fill: $color-primary-white;
+            stroke: $color-primary-white;
+            path {
+              stroke: $color-primary-white;
+            }
+          }
+        }
+        .text {
+            width: 60%;
         }
       }
     }

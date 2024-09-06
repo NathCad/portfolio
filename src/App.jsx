@@ -6,6 +6,7 @@ import SoftSkills from "./components/SoftSkills"
 
 import "./app.scss";
 import AboutMe from "./components/AboutMe";
+import Projets from "./components/Projets";
 
 
 export const App = () => (
@@ -15,5 +16,6 @@ export const App = () => (
     <DevSkills />
     <SoftSkills />
     <AboutMe />
+    <Projets/>
   </>
 );

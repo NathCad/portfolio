@@ -31,7 +31,7 @@ const Intro = () => {
           <span className="display-text extrabold">Développeuse&nbsp;</span>
           <span className="outlined extrabold">Web</span>
         </h2>
-        <p className="intro-text paragraph-p2 regular">
+        <p className="intro-text paragraph-p1 regular">
           Venue d'un autre monde professionnel, je fais aujourd'hui ce qui me
           plaît: développer des applications web en full stack.
           <br />

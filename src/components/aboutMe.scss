@@ -6,6 +6,7 @@
   justify-content: space-between;
   @media (max-width: $mobile-breakpoint) {
     flex-direction: column;
+    padding: 0;
   }
   .image {
     width: 40%;

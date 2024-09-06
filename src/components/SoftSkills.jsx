@@ -22,10 +22,10 @@ const SoftSkills = () => {
     <div id="soft-skills">
       <SkillSet
         className={"soft-skills"}
-        nameClassName={"heading-h5 bold"}
+        nameClassName={"text heading-h5 bold"}
         title={
           <h2 className="display-text extrabold">
-            <span className="regular">Soft</span>&nbsp;Skills
+            Soft&nbsp;<span className="regular">Skills</span>
           </h2>
         }
         skills={skills}

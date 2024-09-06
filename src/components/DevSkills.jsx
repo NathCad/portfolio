@@ -33,7 +33,7 @@ const DevSkills = () => {
         className={"dev-skills"}
         title={
           <h2 className="display-text extrabold">
-            <span className="regular">Dev</span>&nbsp;Skills
+            Dev&nbsp;<span className="regular">Skills</span>
           </h2>
         }
         skills={skills}

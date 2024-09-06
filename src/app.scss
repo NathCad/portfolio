@@ -4,10 +4,10 @@
 :root {
   font-size: 16px;
   @media (max-width: $medium-screen-breakpoint) {
-    font-size: 12px;
+    font-size: 14px;
   }
   @media (max-width: $mobile-breakpoint) {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 * {
@@ -30,6 +30,7 @@ body {
   }
   a {
     text-decoration: none;
+    cursor: pointer;
   }
   button {
     border: none;
