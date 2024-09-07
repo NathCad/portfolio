@@ -32,11 +32,12 @@ const DevSkills = () => {
       <SkillSet
         className={"dev-skills"}
         title={
-          <h2 className="display-text extrabold">
+          <h2 className="text display-text extrabold">
             Dev&nbsp;<span className="regular">Skills</span>
           </h2>
         }
         skills={skills}
+        nameClassName={"text"}
       />
     </div>
   );

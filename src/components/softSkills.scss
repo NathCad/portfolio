@@ -12,14 +12,21 @@
     text-align: center;
   }
   ul {
+    $cols: 2;
+    $gap: 1rem;
+    $horizontal-padding: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: $gap;
+    padding: 1rem $horizontal-padding;
+    @media (max-width: $mobile-breakpoint) {
+      padding: 1rem;
+    }
     .skill-item {
-      width: 45%;
+      width: columnWidth($cols, $horizontal-padding, $gap);
       @media (max-width: $mobile-breakpoint) {
-        width: 90%;
+        width: 100%;
       }
       .skill {
         height: 8rem;
@@ -32,13 +39,13 @@
         border: solid $color-primary-white 2px;
         border-radius: 4px;
         .icon {
-          width: 40%;
           display: flex;
           align-items: center;
+          width: 30%;
           justify-content: center;
           svg {
-            width: 40%;
-            height: auto;
+            width: auto;
+            height: 6rem;
             fill: $color-primary-white;
             stroke: $color-primary-white;
             path {
@@ -47,7 +54,7 @@
           }
         }
         .text {
-            width: 60%;
+          width: 70%;
         }
       }
     }

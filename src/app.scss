@@ -21,10 +21,7 @@
 body {
   max-width: 1440px;
   margin: auto;
-  padding: 1rem;
-  @media (max-width: $mobile-breakpoint) {
-    padding: 1.6rem;
-  }
+  padding: $body-padding;
   li {
     list-style: none;
   }

@@ -19,6 +19,20 @@ const projets = [
     description:
       "Projet en javascript vanilla de présentation d'un portfolio d'une architecte d'intérieur.\nLe projet affiche une gallerie dynamique de réalisations et donne accès à un mode 'administrateur' qui permet de modifier les éléments de la gallerie au travers d'une api rest",
   },
+  {
+    title: "Nina Carducci",
+    image: "/portfolio/nina-arducci-optimized.webp",
+    url: "https://github.com/NathCad/Nina-Carducci-Dev",
+    description:
+      "Sur ce projet j'ai réalisé un travail d'optimisation d'un portfolio d'une photographe.\nAu programme: optimisation des performances, travail sur le SEO du site, amélioratio de l'accessibilité, mise en place du référencement local et du référencement sur les réseaux sociaux",
+  },
+  {
+    title: "Kaza",
+    image: "/portfolio/nina-arducci-optimized.webp",
+    url: "https://github.com/NathCad/Nina-Carducci-Dev",
+    description:
+      "Sur ce projet j'ai réalisé un travail d'optimisation d'un portfolio d'une photographe.\nAu programme: optimisation des performances, travail sur le SEO du site, amélioratio de l'accessibilité, mise en place du référencement local et du référencement sur les réseaux sociaux",
+  },
 ];
 
 const Projets = () => {
@@ -41,7 +55,10 @@ const Projets = () => {
                 </h3>
                 <p className="description">{description}</p>
                 <a className="link" href={url}>
-                  <FontAwesomeIcon className="fa-2x" icon={faArrowUpRightFromSquare} />
+                  <FontAwesomeIcon
+                    className="fa-2x"
+                    icon={faArrowUpRightFromSquare}
+                  />
                 </a>
               </section>
             </article>

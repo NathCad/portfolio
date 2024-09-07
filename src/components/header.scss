@@ -4,11 +4,11 @@ header {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  gap: $gap;
+  gap: 1rem;
   .logo {
     display: flex;
     align-items: center;
-    gap: $gap;
+    gap: 1rem;
   }
   nav {
     display: flex;
