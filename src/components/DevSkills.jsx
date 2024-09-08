@@ -11,6 +11,7 @@ import {
   NodeJs,
   ReactIcon,
   Sass,
+  Scrum,
 } from "./images/Icons";
 import SkillSet from "./skills/SkillSet";
 
@@ -24,6 +25,7 @@ const skills = [
   { name: "Express Js", icon: ExpressJs },
   { name: "MongoDb", icon: MongoDb },
   { name: "Git", icon: Git },
+  { name: "Agilité", icon: Scrum}
 ];
 
 const DevSkills = () => {

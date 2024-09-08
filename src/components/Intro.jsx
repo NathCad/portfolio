@@ -1,21 +1,10 @@
 import React from "react";
 
 import "./intro.scss";
-import { Github, LinkedIn } from "./images/Icons";
 import GirlBanner from "./images/GirlBanner";
+import SocialLinks from './SocialLinks';
 
-const SocialLink = ({ Icon, url }) => {
-  return (
-    <a className="social-link" href={url}>
-      <Icon />
-    </a>
-  );
-};
 
-const socialLinks = [
-  { url: "www.linkedin.com/in/nathalie-cadet-9b037a309", icon: LinkedIn },
-  { url: "https://github.com/NathCad?tab=repositories", icon: Github },
-];
 
 const Intro = () => {
   return (
@@ -39,9 +28,7 @@ const Intro = () => {
           découvrir mes compétences.
         </p>
         <div className="social-links">
-          {socialLinks.map(({ url, icon }) => (
-            <SocialLink key={url} url={url} Icon={icon} />
-          ))}
+          <SocialLinks />
         </div>
       </section>
       <div className="intro-image">

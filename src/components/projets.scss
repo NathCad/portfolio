@@ -15,8 +15,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 5rem;
     gap: 4rem;
+    @media (max-width: $mobile-breakpoint) {
+      padding: 0 1rem;
+    }
     li {
       &:nth-child(even) {
         .project {

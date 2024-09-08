@@ -13,7 +13,7 @@
     $gap: 1rem;
     $horizontal-padding: 5rem;
     $mobile-horizontal-padding: 1rem;
-    $large-cols: 9;
+    $large-cols: 10;
     $medium-cols: 5;
     $mobile-cols: 3;
     display: flex;
@@ -29,6 +29,16 @@
         $size: columnWidth($large-cols, $horizontal-padding, $gap);
         width: $size;
         height: $size;
+        $skill-gap: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $skill-gap;
+        border: solid $color-primary-black 2px;
+        border-radius: 4px;
+        text-align: center;
+        white-space: nowrap;
         @media (max-width: $medium-screen-breakpoint) {
           $size: columnWidth($medium-cols, $horizontal-padding, $gap);
           width: $size;
@@ -40,16 +50,6 @@
           height: $size;
           padding: 0.75rem;
         }
-        $skill-gap: 1rem;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: $skill-gap;
-        border: solid $color-primary-black 2px;
-        border-radius: 4px;
-        text-align: center;
-        white-space: nowrap;
         .icon {
           width: 100%;
           height: 70%;
