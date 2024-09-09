@@ -64,12 +64,12 @@
           }
         }
         .text {
-          font-size: calc((1rem + 10vi) / $large-cols);
+          font-size: calc((0.3rem + 10vi) / $large-cols);
           @media (max-width: $medium-screen-breakpoint) {
-            font-size: calc((1rem + 10vi) / $medium-cols);
+            font-size: calc((0.3rem + 10vi) / $medium-cols);
           }
           @media (max-width: $mobile-breakpoint) {
-            font-size: calc((1rem + 10vi) / $mobile-cols);
+            font-size: calc((0.3rem + 10vi) / $mobile-cols);
           }
         }
       }
