@@ -17,7 +17,7 @@ const projets = [
     image: "/portfolio/sophie-bluel-optimized.webp",
     url: "https://github.com/NathCad/Portfolio-architecte-sophie-bluel",
     description:
-      "Projet en javascript vanilla de présentation d'un portfolio d'une architecte d'intérieur.\nLe projet affiche une gallerie dynamique de réalisations et donne accès à un mode 'administrateur' qui permet de modifier les éléments de la gallerie au travers d'une api rest.",
+      "Projet en javascript vanilla de présentation d'un portfolio d'une architecte d'intérieur.\nLe projet affiche une galerie dynamique de réalisations et donne accès à un mode 'administrateur' qui permet de modifier les éléments de la galerie au travers d'une api rest.",
   },
   {
     title: "Nina Carducci",

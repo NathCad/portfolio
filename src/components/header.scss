@@ -18,16 +18,36 @@ header {
       gap: 1.5rem;
     }
     @media (max-width: $mobile-breakpoint) {
-      display: none;
+      $nav-width: 12rem;
+      width: $nav-width;
+      position: absolute;
+      top: calc(3rem + $body-padding);
+      right: -$nav-width;
+      overflow: hidden;
+      justify-content: flex-end;
+      padding: 0 $body-padding 0 0;
+      transition: ease-in 300ms;
+      ul {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      &.open {
+        transform: translateX(-$nav-width);
+      }
     }
   }
   .burger-menu {
     display: none;
+    height: 2rem;
     @media (max-width: $mobile-breakpoint) {
+      position: absolute;
+      top: $body-padding;
+      right:$body-padding;
       display: block;
     }
   }
   .cv-link {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-around;

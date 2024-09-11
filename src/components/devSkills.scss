@@ -64,7 +64,7 @@
           }
         }
         .text {
-          font-size: calc((0.3rem + 10vi) / $large-cols);
+          font-size: 1.1rem;
           @media (max-width: $medium-screen-breakpoint) {
             font-size: calc((0.3rem + 10vi) / $medium-cols);
           }

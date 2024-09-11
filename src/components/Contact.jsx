@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./contact.scss";
 import SocialLinks from "./SocialLinks";
@@ -6,6 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [webSite, setWebSite] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <section id="contact">
       <h2 className="text display-text extrabold">
@@ -13,19 +18,36 @@ const Contact = () => {
       </h2>
       <div className="content">
         <form>
-          <label arclassName="paragraph-p1 thin">
+          <label className="paragraph-p1 thin">
             <span className="required">Nom</span>
-            <input type="text" placeholder="Votre nom" required />
+            <input
+              type="text"
+              placeholder="Votre nom"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
           </label>
           <label className="paragraph-p1 thin">
             <span className="required">Email</span>
-            <input type="email" placeholder="Votre email" required />
+            <input
+              type="email"
+              placeholder="Votre email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </label>
           <label className="paragraph-p1 thin">
             Site web / Nom de l'entreprise
             <input
               type="text"
               placeholder="Adresse de votre site ou de votre entreprise"
+              name="webSite"
+              value={webSite}
+              onChange={(e) => setWebSite(e.target.value)}
             />
           </label>
           <label className="paragraph-p1 thin">
@@ -33,6 +55,9 @@ const Contact = () => {
             <textarea
               rows="10"
               placeholder="Que puis-je pour vous ?"
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             />
           </label>

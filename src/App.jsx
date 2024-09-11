@@ -7,9 +7,11 @@ import AboutMe from "./components/AboutMe";
 import Projets from "./components/Projets";
 import Contact from "./components/Contact";
 
+
 import "./app.scss";
 
 export const App = () => (
+ 
   <>
     <Header />
     <Intro />

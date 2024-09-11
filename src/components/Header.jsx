@@ -3,6 +3,9 @@ import "./header.scss";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+import Pdf from "../assets/Nathalie_Cadet_CV_Dev.pdf";
+import { useState } from "react";
+
 const Logo = () => {
   return (
     <div className="logo heading-h5 bold">
@@ -36,10 +39,14 @@ const NavLink = ({ text, link }) => {
 };
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+  const showMenu = () => {
+    setOpen(!open);
+  };
   return (
     <header>
       <Logo />
-      <nav>
+      <nav className={open ? "open" : ""}>
         <ul>
           <NavLink text="About Me" link="#about-me" />
           <NavLink text="Dev Skills" link="#dev-skills" />
@@ -48,13 +55,15 @@ const Header = () => {
           <NavLink text="Contact" link="#contact" />
         </ul>
       </nav>
-      <button className="burger-menu">
+      <button className="burger-menu" onClick={showMenu}>
         <FontAwesomeIcon icon={faBars} className="fa-2x" />
       </button>
-      <button className="cv-link button-text semibold">
-        Mon CV
-        <FontAwesomeIcon icon={faFilePdf} />
-      </button>
+      <a href={Pdf} rel="noopener noreferrer" target="_blank">
+        <button className="cv-link button-text semibold">
+          Mon CV
+          <FontAwesomeIcon icon={faFilePdf} />
+        </button>
+      </a>
     </header>
   );
 };
