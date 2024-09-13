@@ -27,6 +27,7 @@ header {
       justify-content: flex-end;
       padding: 0 $body-padding 0 0;
       transition: ease-in 300ms;
+      transform: translateX(0%);
       ul {
         flex-direction: column;
         align-items: flex-end;

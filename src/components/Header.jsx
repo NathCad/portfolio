@@ -4,7 +4,7 @@ import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import Pdf from "../assets/Nathalie_Cadet_CV_Dev.pdf";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Logo = () => {
   return (
@@ -41,12 +41,37 @@ const NavLink = ({ text, link }) => {
 const Header = () => {
   const [open, setOpen] = useState(false);
   const showMenu = () => {
+    console.log("listener showMenu déclenché");
     setOpen(!open);
   };
+  const closeMenu = () => {
+    setOpen(false);
+  };
+
+  const refNav = useRef(null);
+  const refBouton = useRef(null);
+
+  useEffect(() => {
+    const listener = (event) => {
+      if (
+        refNav.current?.contains(event.target) ||
+        refBouton.current?.contains(event.target)
+      ) {
+        return;
+      }
+      console.log("listener outside déclenché");
+      setOpen(false);
+    };
+    document.addEventListener("mousedown", listener);
+    return () => {
+      document.removeEventListener("mousedown", listener);
+    };
+  }, []);
+
   return (
     <header>
       <Logo />
-      <nav className={open ? "open" : ""}>
+      <nav ref={refNav} className={open ? "open" : ""} onClick={closeMenu}>
         <ul>
           <NavLink text="About Me" link="#about-me" />
           <NavLink text="Dev Skills" link="#dev-skills" />
@@ -55,7 +80,7 @@ const Header = () => {
           <NavLink text="Contact" link="#contact" />
         </ul>
       </nav>
-      <button className="burger-menu" onClick={showMenu}>
+      <button ref={refBouton} className="burger-menu" onClick={showMenu}>
         <FontAwesomeIcon icon={faBars} className="fa-2x" />
       </button>
       <a href={Pdf} rel="noopener noreferrer" target="_blank">
