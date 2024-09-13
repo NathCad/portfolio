@@ -41,7 +41,6 @@ const NavLink = ({ text, link }) => {
 const Header = () => {
   const [open, setOpen] = useState(false);
   const showMenu = () => {
-    console.log("listener showMenu déclenché");
     setOpen(!open);
   };
   const closeMenu = () => {
@@ -59,7 +58,6 @@ const Header = () => {
       ) {
         return;
       }
-      console.log("listener outside déclenché");
       setOpen(false);
     };
     document.addEventListener("mousedown", listener);

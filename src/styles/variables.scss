@@ -15,6 +15,7 @@ $color-zinc-400: #969696;
 $color-zinc-500: #58585f;
 $color-zinc-800: #27272a;
 $color-error: #ef4444;
+$color-success: #28a745;
 
 @function columnWidth($cols, $horizontal-padding, $item-gap) {
   @return calc(

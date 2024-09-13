@@ -1,0 +1,79 @@
+@import "../../styles/variables.scss";
+
+.contact-result-modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color: $color-primary-black, $alpha: 0.7);
+    .modal-content{
+        width: 50%;
+        background: $color-primary-white;
+        border-radius: 8px;
+        padding: 2rem 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        @media (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            gap: 1rem;
+        }
+        h1 {
+            width: 100%;
+            text-align: center ;
+            margin: 0 0 1rem 0;
+            @media (max-width: $mobile-breakpoint) {
+                margin: 0;
+            }
+        }
+        
+        .error, .success {
+            width: 30%;
+        }
+        .error {
+            color: $color-error;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .success {
+            color: $color-success;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            width: 70%;
+            @media (max-width: $mobile-breakpoint) {
+                text-align: center;
+            }
+        }
+        .error-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            width: 70%;
+            @media (max-width: $mobile-breakpoint) {
+                align-items: center;
+            }
+        }
+        button {
+            margin: 1rem 0 0 0;
+            background: $color-primary-black;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            color: $color-primary-white;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+}

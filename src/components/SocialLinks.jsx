@@ -4,19 +4,6 @@ import { Github, LinkedIn } from "./images/Icons";
 
 import "./SocialLinks.scss";
 
-const socialLinks = [
-  {
-    url: "www.linkedin.com/in/nathalie-cadet-9b037a309",
-    icon: LinkedIn,
-    name: "LinkedIn",
-  },
-  {
-    url: "https://github.com/NathCad?tab=repositories",
-    icon: Github,
-    name: "GitHub",
-  },
-];
-
 const SocialLink = ({ Icon, url, name }) => {
   return (
     <a className="social-link" href={url} aria-label={name}>
@@ -25,12 +12,26 @@ const SocialLink = ({ Icon, url, name }) => {
   );
 };
 
+export const LinkedInLink = () => (
+  <SocialLink
+    url="www.linkedin.com/in/nathalie-cadet-9b037a309"
+    Icon={LinkedIn}
+    name="LinkedIn"
+  />
+);
+export const GitHubLink = () => (
+  <SocialLink
+    url="https://github.com/NathCad?tab=repositories"
+    Icon={Github}
+    name="GitHub"
+  />
+);
+
 const SocialLinks = () => {
   return (
     <>
-      {socialLinks.map(({ url, icon, name }) => (
-        <SocialLink key={url} url={url} Icon={icon} name={name} />
-      ))}
+      <LinkedInLink />
+      <GitHubLink />
     </>
   );
 };

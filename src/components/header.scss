@@ -19,21 +19,21 @@ header {
     }
     @media (max-width: $mobile-breakpoint) {
       $nav-width: 12rem;
-      width: $nav-width;
+      width: 0;
       position: absolute;
       top: calc(3rem + $body-padding);
-      right: -$nav-width;
+      right: 0;
       overflow: hidden;
       justify-content: flex-end;
-      padding: 0 $body-padding 0 0;
       transition: ease-in 300ms;
-      transform: translateX(0%);
+      text-wrap: nowrap;
       ul {
         flex-direction: column;
         align-items: flex-end;
       }
       &.open {
-        transform: translateX(-$nav-width);
+        padding: 0 $body-padding 0 0;
+        width: $nav-width;
       }
     }
   }

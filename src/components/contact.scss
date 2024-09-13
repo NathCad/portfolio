@@ -51,6 +51,7 @@
       }
       .form-inputs {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         button {
           background-color: $color-primary-black;
@@ -62,6 +63,12 @@
           justify-content: center;
           align-items: center;
           gap: 0.5rem;
+          cursor: pointer;
+          &.reset {
+            border: solid 1px $color-primary-black;
+            background: $color-primary-white;
+            color: $color-primary-black;
+          }
         }
       }
     }
