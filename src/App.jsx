@@ -6,12 +6,11 @@ import SoftSkills from "./components/SoftSkills";
 import AboutMe from "./components/AboutMe";
 import Projets from "./components/Projets";
 import Contact from "./components/Contact";
-
+import Footer from "./components/Footer";
 
 import "./app.scss";
 
 export const App = () => (
- 
   <>
     <Header />
     <Intro />
@@ -20,5 +19,6 @@ export const App = () => (
     <AboutMe />
     <Projets />
     <Contact />
+    <Footer />
   </>
 );

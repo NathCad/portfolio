@@ -18,6 +18,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 body {
   max-width: 1440px;
   margin: auto;
@@ -25,11 +29,7 @@ body {
   li {
     list-style: none;
   }
-  a {
-    text-decoration: none;
-    cursor: pointer;
-  }
-  button {
+   button {
     border: none;
     background: none;
   }
