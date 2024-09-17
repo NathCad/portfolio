@@ -1,6 +1,12 @@
 import React from "react";
 
-const SkillItem = ({ name, Icon, nameClassName = "heading-h6 bold" }) => {
+type SkillItemProps = {
+  name: string,
+  Icon: () => React.JSX.Element,
+  nameClassName?: string
+}
+
+const SkillItem = ({ name, Icon, nameClassName = "heading-h6 bold" }: SkillItemProps) => {
   return (
     <li className="skill-item">
       <article className="skill">

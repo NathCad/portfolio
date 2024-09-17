@@ -4,10 +4,16 @@ import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import Pdf from "../assets/Nathalie_Cadet_CV_Dev.pdf";
-import { useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
+import SkillItem from "./skills/SkillItem";
 
-const NavLink = ({ text, link }) => {
+type NavLinkProps={
+  text: ReactNode,
+  link: string
+}
+
+const NavLink = ({ text, link }:NavLinkProps ) => {
   return (
     <li>
       <a className="heading-h5 semibold" href={link}>
@@ -26,14 +32,14 @@ const Header = () => {
     setOpen(false);
   };
 
-  const refNav = useRef(null);
-  const refBouton = useRef(null);
+  const refNav = useRef<HTMLElement | null>(null);
+  const refBouton = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
-    const listener = (event) => {
+    const listener = (event : MouseEvent) => {
       if (
-        refNav.current?.contains(event.target) ||
-        refBouton.current?.contains(event.target)
+        refNav.current?.contains(event.currentTarget as HTMLElement) ||
+        refBouton.current?.contains(event.currentTarget as HTMLButtonElement)
       ) {
         return;
       }

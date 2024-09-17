@@ -31,7 +31,12 @@ const ErrorContent = () => {
   );
 };
 
-const ContactResultModal = ({ isSuccess, closeModal }) => {
+type ContactResultModalProps = {
+  isSuccess: boolean, 
+  closeModal: () => void
+}
+
+const ContactResultModal = ({ isSuccess, closeModal }: ContactResultModalProps) => {
   return (
     <div className="contact-result-modal">
       <div className="modal-content">

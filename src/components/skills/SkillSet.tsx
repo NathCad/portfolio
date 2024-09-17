@@ -1,6 +1,18 @@
 import SkillItem from "./SkillItem";
 
-const SkillSet = ({className, title, skills, nameClassName}) => {
+type SkillType = {
+  name: string,
+  icon: () => React.JSX.Element
+}
+
+type SkillSetProps={
+  className: string,
+  title: React.JSX.Element,
+  skills: SkillType[],
+  nameClassName: string
+}
+
+const SkillSet = ({className, title, skills, nameClassName}: SkillSetProps) => {
     return (
       <section className={className}>
         {title}
