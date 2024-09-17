@@ -1,4 +1,6 @@
-const GirlBanner = ({ size = 630 }) => {
+import * as React from 'react';
+
+const GirlBanner = () => {
   return (
     <svg
       width="630"

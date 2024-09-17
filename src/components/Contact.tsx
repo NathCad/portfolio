@@ -13,13 +13,13 @@ const Contact = () => {
   const [webSite, setWebSite] = useState("");
   const [message, setMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(null);
+  const [isSuccess, setIsSuccess] = useState<null | boolean>(null);
 
   const contactRef = useRef(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
-    sendMail(e.target);
+    sendMail();
   };
 
   const closeModal = () => {
@@ -99,7 +99,7 @@ const Contact = () => {
             <label className="paragraph-p1 thin">
               <span className="required">Message</span>
               <textarea
-                rows="10"
+                rows={10}
                 placeholder="Que puis-je pour vous ?"
                 name="message"
                 value={message}

@@ -4,7 +4,13 @@ import { Github, LinkedIn } from "./images/Icons";
 
 import "./SocialLinks.scss";
 
-const SocialLink = ({ Icon, url, name }) => {
+type SocialLinkProps = {
+  Icon: () => React.JSX.Element,
+  url: string,
+  name: string
+}
+
+const SocialLink = ({ Icon, url, name }: SocialLinkProps) => {
   return (
     <a className="social-link" href={url} aria-label={name}>
       <Icon />

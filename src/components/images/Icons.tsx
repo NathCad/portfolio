@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export const LinkedIn = () => {
   return (
     <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -233,11 +235,11 @@ export const Html5 = () => {
       enable-background="new 0 0 108.36 122.88"
       version="1.1"
       viewBox="0 0 108.36 122.88"
-      xml:space="preserve"
+      xmlSpace="preserve"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        class="st0"
+        className="st0"
         d="m0 0 9.86 110.59 44.25 12.29 44.37-12.3 9.88-110.58h-108.36zm86.89 36.18h-51.9l1.24 13.89h49.43l-3.72 41.64-27.82 7.71-27.79-7.71-1.9-21.31h13.62l0.97 10.83 15.11 4.07 0.03-0.01 15.11-4.08 1.57-17.59h-47.01l-3.65-41.02h67.94l-1.23 13.58z"
       />
     </svg>
@@ -253,7 +255,7 @@ export const Css3 = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <polygon
-        class="st0"
+        className="st0"
         points="18.29 0.01 14.16 20.64 98.14 20.64 95.51 33.97 11.49 33.96 7.42 54.59 91.39 54.59 86.7 78.12 52.86 89.33 23.53 78.12 25.54 67.91 4.91 67.91 0 92.67 48.51 111.23 104.43 92.67 122.88 0"
       />
     </svg>
