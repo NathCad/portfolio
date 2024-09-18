@@ -12,7 +12,7 @@ type SocialLinkProps = {
 
 const SocialLink = ({ Icon, url, name }: SocialLinkProps) => {
   return (
-    <a className="social-link" href={url} aria-label={name}>
+    <a className="social-link" href={url} aria-label={name} target="_blank">
       <Icon />
     </a>
   );
@@ -20,7 +20,7 @@ const SocialLink = ({ Icon, url, name }: SocialLinkProps) => {
 
 export const LinkedInLink = () => (
   <SocialLink
-    url="www.linkedin.com/in/nathalie-cadet-9b037a309"
+    url="https://www.linkedin.com/in/nathalie-cadet-9b037a309"
     Icon={LinkedIn}
     name="LinkedIn"
   />
